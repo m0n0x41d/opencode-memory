@@ -8,7 +8,7 @@ You are extracting NEW knowledge from this session that would be valuable in fut
 
 1. **Check existing knowledge**:
    - Use project documentation already in your context (from @mentions/exploration)
-   - Read previous learnings from `.tmp/memory-learnings.md` if it exists
+   - Read previous learnings from `.context/project-memory.md` if it exists
 
 2. **Track documentation seen**:
    - Note references to documentation encountered in this session

@@ -6,15 +6,15 @@ You are compacting the memory learnings file to reduce size while preserving kno
 
 ## Process
 
-1. Read `.tmp/memory-learnings.md`
+1. Read `.context/project-memory.md`
 2. Parse all sessions and extract learnings by category
 3. Consolidate within each category:
    - Remove exact duplicates and merge semantically similar learnings
    - Keep most recent version for contradictions
    - Preserve important nuances and context
-4. Backup: `cp .tmp/memory-learnings.md .tmp/memory-learnings.backup.md`
+4. Backup: `cp .context/project-memory.md .context/memory-learnings.backup.md`
 5. Write consolidated learnings only (remove ALL sessions)
-6. Report: "✓ Compacted from [original size] to [new size]. Removed [X] sessions. Backup: .tmp/memory-learnings.backup.md"
+6. Report: "✓ Compacted from [original size] to [new size]. Removed [X] sessions. Backup: .context/memory-learnings.backup.md"
 
 ## Output Format
 
@@ -56,7 +56,7 @@ Organize in this order (skip empty categories):
 
 ## Error Handling
 
-- File not found: "No memory file found at .tmp/memory-learnings.md"
+- File not found: "No memory file found at .context/project-memory.md"
 - Empty file: "Memory file is empty, nothing to compact"
 - Parse errors: Skip malformed sections, report what processed
 - Write failure: Display content for manual save

@@ -98,7 +98,7 @@ The system categorizes and prioritizes learnings to ensure the most valuable kno
    /learning-store
    ```
 
-   This appends to `.tmp/memory-learnings.md` with a timestamp.
+   This appends to `.tmp/project-memory.md` with a timestamp.
 
 4. **Recall in future sessions** - Start new sessions with:
 
@@ -161,5 +161,5 @@ Assistant: Updated understanding:
 - Error Logging: Production errors are logged to Sentry
 
 User: /learning-store
-Assistant: Learnings saved to .tmp/memory-learnings.md
+Assistant: Learnings saved to .tmp/project-memory.md
 ```

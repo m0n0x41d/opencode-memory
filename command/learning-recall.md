@@ -6,7 +6,7 @@ You are loading accumulated knowledge from previous sessions to enhance your und
 
 ## Process
 
-1. Read `.tmp/memory-learnings.md`
+1. Read `.context/project-memory.md`
 2. Parse learnings (newest first - headers: `## YYYY-MM-DD HH:MM TZ - Session Focus`)
 3. Consolidate similar learnings, prefer recent ones for conflicts
 4. Present categorized summary in priority order:

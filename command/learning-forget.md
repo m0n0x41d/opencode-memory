@@ -2,4 +2,4 @@
 description: Delete learnings from memory file
 ---
 
-Remove all content from the memory file at `.tmp/memory-learnings.md`
+Remove all content from the memory file at `.context/project-memory.md`

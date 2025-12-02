@@ -41,7 +41,7 @@ The Agent Learning System provides persistent learning capabilities that allow a
    - Each command contains agent instructions for specific learning operations
    - Commands integrate with OpenCode or Claude Code command execution system
 
-2. **Memory Storage** (`.tmp/memory-learnings.md`)
+2. **Memory Storage** (`.context/project-memory.md`)
    - Local file-based storage for each project
    - Structured markdown format with timestamps and categories
    - Automatic organization with newest sessions first
@@ -117,7 +117,7 @@ The memory system is implemented as a set of "commands" for OpenCode and Claude 
 
 ### File Location and Naming
 
-Memory files are stored as `.tmp/memory-learnings.md` in each project directory (not version controlled).
+Memory files are stored as `.context/project-memory.md` in each project directory (not version controlled).
 
 ### File Format
 
@@ -278,7 +278,7 @@ Additional commands:
 **Behavior**:
 
 - Must use documentation already in agent context (from @mentions or exploration)
-- Must read previous learnings from `.tmp/memory-learnings.md`
+- Must read previous learnings from `.context/project-memory.md`
 - Track references to documentation encountered in session using standardized format
 - Filter potential learnings against existing knowledge base (context + previous learnings)
 - Apply quality rubric to ensure only valuable learnings are captured
@@ -337,7 +337,7 @@ Must include validation checklist in output for user review.
 
 **Behavior**:
 
-- Append to `.tmp/memory-learnings.md` with local timestamp and session focus
+- Append to `.context/project-memory.md` with local timestamp and session focus
 - Include project name, session focus, and documentation seen
 - Store brief references to documentation encountered (paths/locations only)
 - Organize learnings by category in priority order
@@ -361,7 +361,7 @@ Store learnings in this priority order within each session:
 
 **Behavior**:
 
-- Read entire `.tmp/memory-learnings.md` file
+- Read entire `.context/project-memory.md` file
 - Parse consolidated learnings and recent sessions
 - Consolidate similar learnings, preferring recent ones for conflicts
 - Present consolidated knowledge to user in priority order
@@ -387,7 +387,7 @@ Present learnings in this priority order:
 **Behavior**:
 
 - Trigger when file exceeds 1MB
-- Create backup at `.tmp/memory-learnings.backup.md`
+- Create backup at `.context/memory-learnings.backup.md`
 - Parse all sessions and extract learnings by category
 - Consolidate learnings within each category (remove duplicates, merge similar, keep recent for contradictions)
 - Preserve consolidated learnings at top in priority order

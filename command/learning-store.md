@@ -10,9 +10,9 @@ Ensure: User approved learnings via `/learning-summarise`, no sensitive data inc
 
 ## Storage Process
 
-1. Run `mkdir -p .tmp` to ensure directory exists
+1. Run `mkdir -p .context` to ensure directory exists
 2. Get timestamp: `date "+%Y-%m-%d %H:%M %Z"`
-3. Read existing `.tmp/memory-learnings.md` (if exists)
+3. Read existing `.context/project-memory.md` (if exists)
 4. Prepend new entry with format:
 
 ```markdown
@@ -37,7 +37,7 @@ Ensure: User approved learnings via `/learning-summarise`, no sensitive data inc
 ```
 
 5. Write updated content back to file
-6. Confirm: "✓ Learnings stored in .tmp/memory-learnings.md"
+6. Confirm: "✓ Learnings stored in .context/project-memory.md"
 
 ## Priority Order
 
